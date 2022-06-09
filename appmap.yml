@@ -1,0 +1,16 @@
+recorder: process
+packages:
+  - regexp: (^|/)node_modules/
+    enabled: false
+  - regexp: ^
+    enabled: true
+scenarios:
+  handled:
+    command: node hello-world/handled.js
+    map-name: handled
+  discarded:
+    command: node hello-world/discarded.js
+    map-name: discarded
+  top-await:
+    command: node hello-world/top-await.mjs
+    map-name: top-await

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@appland/appmap-agent-js": "^10.1.0"
+  },
+  "scripts": {
+    "exec": "npx appmap-agent-js --scenario handled && npx appmap-agent-js --scenario discarded && npx appmap-agent-js --scenario top-await"
+  }
+}
